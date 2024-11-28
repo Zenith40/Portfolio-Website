@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel ="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/727acd6c8a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/Name.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Aspiring Data Scientist</p>
+                    <br>
+                    <h1>Hi, I'm <span>Satkar</span><br>Sarvankar From India</h1>
+                </div>
+            </div>
+        </div>
+        <!------------------About------------------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/User.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            Aspiring data scientist with a passion for transforming data into actionable insights. 
+                            Proficient in tools like Python, Numpy, Pandas, Matplotlib and TensorFlow, I have experience building 
+                            machine learning models and creating compelling visualizations. I’m eager to apply my skills 
+                            to solve real-world problems and deliver impactful data-driven solutions.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Mathematics and Statistics:</span><br>
+                                    * Probability and distributions <br>
+                                    * Hypothesis testing <br>
+                                    * Linear algebra <br>
+                                    * Calculus <br>
+                                    * Optimization techniques <br>
+                                </li>
+                                <li><span>Tools and Frameworks:</span><br>
+                                    * Python<br>
+                                    * TensorFlow, PyTorch (for deep learning)<br>
+                                    * Scikit-learn (for ML algorithms)<br>
+                                    * Jupyter Notebooks (for coding and visualization)<br>
+                                    * Git/GitHub (for version control)
+                                </li>
+                                <li><span>Data Analysis and Processing:</span><br>
+                                    * Data wrangling and cleaning <br>
+                                    * Exploratory data analysis (EDA) <br>
+                                    * Statistical analysis
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>IT Suppot at Mobilestyx (2024 - Current)</span><br>
+                                    <br>
+                                    * Collaborated with stakeholders to comprehend their needs and collect detailed business requirements.<br>
+                                    * Documenting business requirements, creating process flow diagrams, and other relevant documentation.<br> 
+                                    * Facilitated meetings and workshops to discuss project progress, challenges, and requirements.<br>
+                                    * Assisted with the implementation of new systems or enhancements to existing systems.<br>
+                                    * Collaborated with IT teams to design technology solutions that meet business requirements.<br>
+                                    * Developing test plans and test cases to validate that the implemented solutions meet business requirements.<br> 
+                                    * Assisted in project planning, scheduling, and tracking.
+                                    <br>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>B.E from Goa College of Engineering (2019 - 2023)</span><br>
+                                    <br>
+                                    * Strong analytical and problem-solving skills from mechanical engineering.<br>
+                                    * Solid foundation in mathematics, including calculus, linear algebra, and statistics.<br>
+                                    * Proficient in Python, TensorFlow, and Matplotlib for data analysis and visualization.<br>
+                                    * Experience working with real-world, noisy datasets from sensors and equipment.<br>
+                                    * Skilled in applying data science to challenges like predictive maintenance and process optimization.<br>
+                                    * Unique ability to combine engineering expertise with data-driven solutions.
+                                    <br>
+                                </li>
+                                <li><span>Higher Secondary from Jawahar Navodaya Vidyalaya (2017 - 2019)</span><br>
+                                    <br>
+                                    * Strong foundation in mathematics, including algebra, calculus, and statistics.<br>
+                                    * Developed problem-solving skills and programming logic through JAVA.<br>
+                                    * Hands-on experience with SQL, allowing me to efficiently query databases  and manage data.<br>
+                                    * Knowledge of HTML helps me understand web-based data and create interactive dashboards.<br>
+                                    * My science background has strengthened my analytical thinking and ability to approach problems systematically.
+                                    <br>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!------------------Services------------------------>
+        <!--https://fontawesome.com/icons/arrow-rotate-left?f=classic&s=solid : FOR ICONS -->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <h2>Machine Learning Model Development</h2>
+                        <p>Design, implement, and optimize machine learning algorithms for prediction, classification, and clustering tasks.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-buromobelexperte"></i>
+                        <h2>Data Cleaning & Preprocessing</h2>
+                        <p>Ensuring data is clean, consistent, and formatted correctly for analysis, removing errors or inconsistencies.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                        <h2>Data Visualization</h2>
+                        <p>Presenting complex data through visual tools (e.g., graphs, charts) to make insights easily understandable for stakeholders.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <h2>Automation & Optimization</h2>
+                        <p>Develop algorithms for automating repetitive tasks or optimizing workflows.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------Portfolio------------------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/anime_recommender_system.png">
+                        <div class="layer">
+                            <h3>Anime Recommender System</h3>
+                            <p>
+                                The Anime Recommender System uses content-based filtering to suggest anime based on users' 
+                                preferences and viewing history. By analyzing anime descriptions, genres, themes, and other 
+                                metadata, it generates personalized recommendations that match the user's taste. The system 
+                                leverages natural language processing (NLP) and machine learning algorithms to extract features 
+                                from anime content, ensuring accurate suggestions. This project helps users discover new anime 
+                                by providing tailored recommendations based on similar themes, plots, and genres, offering a more 
+                                dynamic and engaging anime discovery experience.
+                            </p>
+                            <a href="https://www.kaggle.com/code/zenith04/titanic-dataset-ver-0-1"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/stockprice_prediction_system.png">
+                        <div class="layer">
+                            <h3>Stock Price Predictor</h3>
+                            <p>
+                                The Stock Price Predictor leverages machine learning models to forecast stock prices based on 
+                                historical data. The project involves collecting and preprocessing data, such as historical stock 
+                                prices, trading volumes, and market indicators, to identify trends and patterns. Using supervised 
+                                learning algorithms like Linear Regression, LSTM (Long Short-Term Memory), or Random Forest, the 
+                                model predicts future stock prices with reasonable accuracy.
+
+                                Key features include data visualization to analyze historical trends, feature engineering to 
+                                enhance predictive performance, and evaluation metrics like RMSE (Root Mean Squared Error) to assess 
+                                the model's effectiveness.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/anime_recommender_system.png">
+                        <div class="layer">
+                            <h3>Titanic Dataset</h3>
+                            <p>The sinking of the Titanic is one of the most infamous shipwrecks in history.
+                                On April 15, 1912, during her maiden voyage, the widely considered “unsinkable” 
+                                RMS Titanic sank after colliding with an iceberg. Unfortunately, there weren’t 
+                                enough lifeboats for everyone onboard, resulting in the death of 1502 out of 2224 
+                                passengers and crew.
+                                While there was some element of luck involved in surviving, it seems some groups of 
+                                people were more likely to survive than others.
+                                In this challenge, we ask you to build a predictive model that answers the question: 
+                                “what sorts of people were more likely to survive?” using passenger data 
+                                (ie name, age, gender, socio-economic class, etc).</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/anime_recommender_system.png">
+                        <div class="layer">
+                            <h3>Titanic Dataset</h3>
+                            <p>The sinking of the Titanic is one of the most infamous shipwrecks in history.
+                                On April 15, 1912, during her maiden voyage, the widely considered “unsinkable” 
+                                RMS Titanic sank after colliding with an iceberg. Unfortunately, there weren’t 
+                                enough lifeboats for everyone onboard, resulting in the death of 1502 out of 2224 
+                                passengers and crew.
+                                While there was some element of luck involved in surviving, it seems some groups of 
+                                people were more likely to survive than others.
+                                In this challenge, we ask you to build a predictive model that answers the question: 
+                                “what sorts of people were more likely to survive?” using passenger data 
+                                (ie name, age, gender, socio-economic class, etc).</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/Zenith40?tab=projects" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!------------------Contact------------------------>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>satkarsarvankar400@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91-9307175826</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/satkar-sarvankar/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.kaggle.com/zenith04"><i class="fa-brands fa-kaggle"></i></a>
+                            <a href="https://github.com/Zenith40"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-brands fa-medium"></i></a>
+                        </div>
+                        <a href="Images/Data Scientist.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright Satkar. Made with <i class="fa-solid fa-heart"></i> by SATKAR </p>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz7czDLAx15BZPGitXYxTif6cw1J_0bIDaU1vxdkZzHyyWsPrPHAnhElf9ZOhPm_2n_sg/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },2000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>
