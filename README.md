@@ -1,3 +1,3 @@
 # Portfolio_Website
 
-### https://satkar-portfolio-website.on.drv.tw/Projects/satkar_portfolio/
+### https://satkar-portfolio-site.netlify.app/
