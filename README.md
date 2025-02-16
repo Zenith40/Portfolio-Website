@@ -1,3 +1,3 @@
 # Portfolio_Website
 
-https://satkar-portfolio-site.netlify.app
+https://satkar-sarvankar.netlify.app/
